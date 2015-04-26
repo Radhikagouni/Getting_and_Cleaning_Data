@@ -12,6 +12,9 @@
 
 ##########################################################################################################
 
+# Clean up workspace
+rm(list=ls())
+
 # 1. Merge the training and the test sets to create one data set.
 
 #set working directory to the location where the UCI HAR Dataset was unzipped
