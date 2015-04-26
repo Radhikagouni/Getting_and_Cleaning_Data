@@ -80,18 +80,18 @@ colNames  = colnames(finalData);
 # Cleaning up the variable names
 for (i in 1:length(colNames)) 
 {
-        colNames[i] = gsub("\\()","",colNames[i])
-        colNames[i] = gsub("-std$","StdDev",colNames[i])
-        colNames[i] = gsub("-mean","Mean",colNames[i])
-        colNames[i] = gsub("^(t)","time",colNames[i])
-        colNames[i] = gsub("^(f)","freq",colNames[i])
-        colNames[i] = gsub("([Gg]ravity)","Gravity",colNames[i])
-        colNames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i])
-        colNames[i] = gsub("[Gg]yro","Gyro",colNames[i])
-        colNames[i] = gsub("AccMag","AccMagnitude",colNames[i])
-        colNames[i] = gsub("([Bb]odyaccjerkmag)","BodyAccJerkMagnitude",colNames[i])
-        colNames[i] = gsub("JerkMag","JerkMagnitude",colNames[i])
-        colNames[i] = gsub("GyroMag","GyroMagnitude",colNames[i])
+  colNames[i] = gsub("\\()","",colNames[i])
+  colNames[i] = gsub("-std$","StdDev",colNames[i])
+  colNames[i] = gsub("-mean","Mean",colNames[i])
+  colNames[i] = gsub("^(t)","time",colNames[i])
+  colNames[i] = gsub("^(f)","freq",colNames[i])
+  colNames[i] = gsub("([Gg]ravity)","Gravity",colNames[i])
+  colNames[i] = gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i])
+  colNames[i] = gsub("[Gg]yro","Gyro",colNames[i])
+  colNames[i] = gsub("AccMag","AccMagnitude",colNames[i])
+  colNames[i] = gsub("([Bb]odyaccjerkmag)","BodyAccJerkMagnitude",colNames[i])
+  colNames[i] = gsub("JerkMag","JerkMagnitude",colNames[i])
+  colNames[i] = gsub("GyroMag","GyroMagnitude",colNames[i])
 };
 
 # Reassigning the new descriptive column names to the finalData set
